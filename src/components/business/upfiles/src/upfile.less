@@ -1,0 +1,233 @@
+ul,
+ol,li,p{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.upload-box{
+  padding-top: 4px;
+  .loadingbox{
+    padding: 10px 0 0 21px;
+    img{
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .upbutton{
+    width:100px;
+    height:32px;
+    padding: 0;
+    font-size:12px;
+    border-radius:2px;
+    color:rgba(13,20,30, 0.5);
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(13,20,30,0.5);
+    i{
+      font-size: 13px;
+      margin-left: 2px;
+    }
+    &:hover{
+      color:rgba(48,106,255,1);
+      border:1px solid rgba(48,106,255,1);
+    }
+  }
+  
+  /deep/.el-upload-list{
+    display: none;
+  }
+}
+
+.list-files-box{
+  margin-top: 12px;
+  font-size:12px !important;
+  dd{
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    color:rgba(13,20,30, 0.7);
+    li{
+      margin-right: 17px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .list-logo{
+      // width: 13px;
+      // height: 16px;
+      margin-right: 8px;
+      img{
+        display: block;
+        width: 13px;
+      }
+    }
+    .list-name{
+      line-height:16px;
+      font-size:12px;
+    }
+
+    .downdelfile{
+      display: flex;
+      align-items: center;
+      p{
+        cursor: pointer;
+        display: block;
+        margin-right: 7px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        color: #aaa;
+        &:hover{
+          color: #326BFF;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      .del{
+        font-size: 14px;
+      }
+    }
+  }
+}
+.list-filestwo-box , .list-files-dayweek{
+  display: flex;
+  flex-flow: row wrap;
+  .inner{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .loadingbox{
+    height: 36px;
+    padding: 7px 0;
+    margin: 12px 0 0 12px;
+    display: flex;
+    align-items: center;
+  }
+  ul{
+    width: 254px;
+    height: 36px;
+    padding: 7px 8px 7px 6px;
+    margin-right: 12px;
+    margin-top: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background:rgba(247,248,252,1);
+    border-radius:2px;
+    &:hover{
+      background:rgba(235,236,241,1);
+    }
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+
+    .list-logo{
+      width: 32px;
+      height: 32px;
+      margin-right: 6px;
+      img{
+        display: block;
+        width: 32px;
+        height: 32px;
+      }
+    }
+    .list-names{
+      width: 168px;
+      padding-right: 8px;
+      .file-name{
+        display: flex;
+        height:16px;
+        line-height:16px;
+        padding-bottom: 4px;
+        font-size:12px;
+        color:rgba(13,20,30,0.8);
+        span{
+          display: block;
+          max-width: 156px;
+        }
+        b{
+          display: block;
+          margin-left: 2px;
+        }
+      }
+      .user-name{
+        height:16px;
+        line-height:16px;
+        font-size:12px;
+        color:rgba(13,20,30,0.3);
+      }
+    }
+
+    .downdelfile{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 40px;
+      p{
+        cursor: pointer;
+        display: block;
+        margin-right: 7px;
+        width: 16px;
+        height: 16px;
+        color: #aaa;
+        &:hover{
+          color: #326BFF;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      .del{
+        font-size: 14px;
+      }
+    }
+
+  }
+  
+}
+.list-files-dayweek{
+  ul{
+    &:nth-child(3n){
+      margin-right: 12px;
+    }
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+}
+
+.upfile-two{
+  position: relative;
+  // /deep/.el-upload{
+  //   position: absolute;
+  //   top: -40px;
+  //   right: 0;
+  // }
+
+  .upbuttontwo{
+    width:100px;
+    height:40px;
+    padding: 0;
+    font-size:12px;
+    border-radius:2px;
+    color:rgba(13,20,30, 0.5);
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(13,20,30,0.2);
+    i{
+      font-size: 13px;
+      margin-left: 2px;
+    }
+    &:hover{
+      color:rgba(48,106,255,1);
+      border:1px solid rgba(48,106,255,1);
+    }
+  }
+  
+}
